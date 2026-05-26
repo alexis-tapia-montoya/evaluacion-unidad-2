@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Gestión Académica - Lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="registro.html">Registro</a> | 
+        <a href="dashboard.html">Visualización</a>
+    </nav>
+    <main>
+        <h2>Alumnos Registrados</h2>
+        <p>Presione el botón para cargar la lista completa desde el sistema:</p>
+        <button id="btn-cargar">Visualizar Alumnos</button>
+        <ul id="lista-usuarios" style="margin-top: 15px;"></ul>
+
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
+
+        <h2>Búsqueda de Alumno</h2>
+        <p>Búsqueda específica mediante el identificador numérico de registro:</p>
+        <div style="display: flex; gap: 10px;">
+            <input type="number" id="buscar-id" placeholder="ID (Ej: 1)" style="width: 100px;">
+            <button id="btn-buscar" style="margin-top: 0; background-color: #28a745;">Buscar Alumno</button>
+        </div>
+        <div id="detalle-alumno" style="margin-top: 15px;"></div>
+    </main>
+    <script src="fetch.js"></script>
+</body>
+</html>

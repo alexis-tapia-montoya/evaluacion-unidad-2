@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Académico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="registro.html">Registro</a> | 
+        <a href="dashboard.html">Visualización</a>
+    </nav>
+    <main>
+        <h2>Ingreso de Nuevos Alumnos</h2>
+        <form id="form-registro">
+            <label>RUT del Alumno:</label>
+            <input type="text" id="rut" placeholder="Ej: 21.486.324-5" required>
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ej: Alex" required>
+
+            <label>Apellido:</label>
+            <input type="text" id="apellido" placeholder="Ej: Tapia" required>
+
+            <label>Email Institucional:</label>
+            <input type="email" id="email" placeholder="Ej: atapita@gmail.com" required>
+
+            <label>Teléfono de Contacto:</label>
+            <input type="text" id="telefono" placeholder="Ej: 954893189" required>
+
+            <label>Carrera:</label>
+            <input type="text" id="carrera" placeholder="Ej: Ing en Computación" required>
+
+            <button type="submit">Guardar Alumno en BD</button>
+        </form>
+    </main>
+    <script src="fetch.js"></script>
+</body>
+</html>
